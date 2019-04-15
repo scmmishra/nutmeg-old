@@ -5,15 +5,38 @@
   "main": "app.js",
   "scripts": {
     "test": "run-test",
-    "dev": "node app.js"
+    "dev": "node app.js",
+    "vue-serve": "vue-cli-service serve",
+    "vue-build": "vue-cli-service build",
+    "vue-lint": "vue-cli-service lint"
   },
   "author": "Shivam Mishra <shivam@shivam.dev>",
   "license": "GPL-3.0",
   "dependencies": {
+    "axios": "^0.18.0",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
+    "core-js": "^2.6.5",
+    "cors": "^2.8.5",
     "express": "^4.16.4",
+    "feather-icons": "^4.19.0",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.5.1"
+    "mongoose": "^5.5.1",
+    "register-service-worker": "^1.6.2",
+    "tailwindcss": "^0.7.4",
+    "tiptap": "1.14.0",
+    "tiptap-extensions": "1.14.0",
+    "vue": "^2.6.10",
+    "vue-axios": "^2.1.4",
+    "vue-router": "^3.0.3",
+    "vue-shortkey": "^3.1.6"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.6.0",
+    "@vue/cli-plugin-pwa": "^3.6.0",
+    "@vue/cli-service": "^3.6.0",
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0",
+    "vue-template-compiler": "^2.5.21"
   }
 }
