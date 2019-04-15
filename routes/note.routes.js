@@ -1,3 +1,5 @@
+const jwt = require('../auth/jwt.auth.js')
+
 module.exports = (app) => {
     const notes = require('../controllers/note.controller.js');
 

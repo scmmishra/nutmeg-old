@@ -25,7 +25,6 @@ exports.signup = (req, res) => {
 
 exports.login = (req, res) => {
   console.log("Log-In");
-  console.log(sessionConfig)
 
   User.findOne({ username: req.body.username })
   .exec((err, user) => {
