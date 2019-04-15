@@ -1,0 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans:400,500,600,700|IBM+Plex+Serif');
+
+@tailwind preflight;
+@tailwind components;
+@tailwind utilities;
