@@ -2,9 +2,11 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const dbConfig = require('./config/database.config.js');
 const mongoose = require('mongoose');
+var cors = require('cors')
 
 // create express app
 const app = express();
+app.use(cors())
 
 // parse requests of content-type - application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }))
@@ -25,7 +27,7 @@ mongoose.connect(dbConfig.url, {
 
 // define a simple route
 app.get('/', (req, res) => {
-	res.json({"message": "Welcome to EasyNotes application. Take notes quickly. Organize and keep track of all your notes."});
+	res.sendFile(path.join( + './public/index.html'));
 });
 
 require('./routes/note.routes.js')(app);
